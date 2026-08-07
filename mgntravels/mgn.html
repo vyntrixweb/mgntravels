@@ -1,0 +1,349 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MGN Travels | Premium Car Rentals Chennai</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+        <style>
+            :root {
+                --gold-primary: #D4AF37;
+                --gold-light: #F9E498;
+                --accent-gradient: linear-gradient(135deg, #D4AF37 0%, #F9E498 100%);
+                --bg-dark: #0a0a0a;
+                --card-bg: #151515;
+                --sidebar-w: 280px;
+            }
+
+            * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+            body { font-family: 'Montserrat', sans-serif; background-color: var(--bg-dark); color: #fff; line-height: 1.6; overflow-x: hidden; }
+
+            /* --- UI ELEMENTS --- */
+            #scroll-progress { position: fixed; top: 0; left: 0; height: 4px; background: var(--accent-gradient); width: 0%; z-index: 5000; transition: 0.1s; }
+            
+            .call-float {
+                position: fixed; bottom: 30px; right: 30px; background: var(--accent-gradient); width: 60px; height: 60px;
+                border-radius: 50%; display: flex; align-items: center; justify-content: center;
+                font-size: 26px; color: #000; z-index: 4000; animation: pulse 2s infinite; text-decoration: none;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            }
+
+            /* --- SIDEBAR --- */
+            #sidebar {
+                width: var(--sidebar-w); height: 100vh; position: fixed; left: 0; top: 0;
+                background: #000; border-right: 1px solid rgba(212, 175, 55, 0.2);
+                padding: 40px 20px; display: flex; flex-direction: column; z-index: 3000;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    
+            }
+            .brand h1 { font-family: 'Playfair Display', serif; background: var(--accent-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; text-align: center; }
+            .brand p { font-size: 0.65rem; letter-spacing: 3px; color: #888; text-transform: uppercase; text-align: center; margin-bottom: 30px; }
+
+            .nav-menu a {
+                color: #aaa; text-decoration: none; display: flex; align-items: center;
+                padding: 12px 15px; border-radius: 10px; transition: 0.3s; margin-bottom: 5px; border-left: 4px solid transparent;
+            }
+            .nav-menu a.active, .nav-menu a:hover { color: #fff; background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--gold-primary); }
+
+            /* --- MAIN CONTENT AREA --- */
+            #main { margin-left: var(--sidebar-w); transition: margin 0.4s ease; }
+
+            /* --- MOBILE TOGGLE --- */
+            .menu-toggle {
+                display: none; position: fixed; top: 20px; right: 20px; z-index: 6000;
+                background: var(--gold-primary); color: #000; border: none; width: 50px;
+                height: 50px; border-radius: 50%; align-items: center; justify-content: center;
+                cursor: pointer; font-size: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            }
+
+            @media (max-width: 992px) {
+                #sidebar { transform: translateX(-100%); }
+                #main { margin-left: 0; }
+                .menu-toggle { display: flex; }
+                .sidebar-open #sidebar { transform: translateX(0); box-shadow: 20px 0 50px #000; }
+                .sidebar-open::after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 2500; }
+            }
+
+            /* --- SECTION STYLING --- */
+            section { padding: 100px 8%; position: relative; }
+            .section-title span { color: var(--gold-primary); letter-spacing: 5px; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+            .section-title h3 { font-family: 'Playfair Display'; font-size: 3rem; margin-bottom: 40px; }
+
+            .hero { height: 100vh; display: flex; align-items: center; background: linear-gradient(to right, #000 40%, transparent), url('photo-1544620347-c4fd4a3d5957.jpeg'); background-size: cover; background-position: center; }
+            .gold-btn { background: var(--accent-gradient); color: #000; padding: 18px 40px; border-radius: 5px; text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s; border: none; text-transform: uppercase; font-size: 0.9rem; }
+            .gold-btn:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); }
+
+            .fleet-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-top: 20px; }
+            .car-card { background: var(--card-bg); border-radius: 20px; overflow: hidden; border: 1px solid #222; transition: 0.4s; }
+            .car-card:hover { border-color: var(--gold-primary); transform: translateY(-10px); }
+            .car-img { height: 220px; background-size: cover; background-position: center; }
+            .car-info { padding: 25px; }
+            .car-tag { color: var(--gold-primary); font-size: 0.7rem; font-weight: 800; text-transform: uppercase; margin-bottom: 5px; display: block; }
+            
+            .booking-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; margin-top: 50px; }
+            .booking-step { position: relative; text-align: center; padding: 40px 25px; background: rgba(255,255,255,0.03); border-radius: 20px; border: 1px solid #222; transition: 0.3s; }
+            .booking-step:hover { background: rgba(255,255,255,0.06); }
+            .step-num { width: 45px; height: 45px; background: var(--accent-gradient); color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; position: absolute; top: -22px; left: 50%; transform: translateX(-50%); border: 4px solid var(--bg-dark); }
+            
+            .contact-box { background: var(--accent-gradient); color: #000; padding: 80px 40px; border-radius: 40px; text-align: center; }
+            .gold-text { color: var(--gold-primary); }
+
+            @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
+        </style>
+    </head>
+    <body>
+
+        <div id="scroll-progress"></div>
+        
+        <a href="tel:+919941142648" class="call-float" title="call Us Directly">
+            <i class="bi bi-telephone-outbound"></i>
+        </a>
+
+        <button class="menu-toggle" id="mobToggle"><i class="bi bi-list"></i></button>
+
+        <aside id="sidebar">
+            <div class="brand">
+                <h1>MGN</h1>
+                <p>Travels </p>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active"><i class="bi bi-house"></i> Home</a>
+                <a href="#fleet" class="nav-link"><i class="bi bi-car-front"></i> Our Fleet</a>
+                <a href="#services" class="nav-link"><i class="bi bi-geo-alt"></i> Our Services</a>
+                <a href="#how-to-book" class="nav-link"><i class="bi bi-calendar-check"></i> How to Book</a>
+                <a href="#about" class="nav-link"><i class="bi bi-shield-check"></i> Why Choose Us</a>
+                <a href="#contact" class="nav-link"><i class="bi bi-telephone"></i> Contact Us</a>
+            </nav>
+            <div style="margin-top: auto; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 12px; text-align: center; border: 1px solid rgba(212,175,55,0.1);">
+                <p style="font-size: 0.6rem; color: #666; letter-spacing: 1px; margin-bottom: 5px;">PROPRIETOR</p>
+                <h4 style="color: #fff; font-family: 'Playfair Display'; font-size: 1.1rem; margin-bottom: 10px;">B. Gopal Samy</h4>
+              <a href="mailto:mgntravels77@gmail.com" style="color: var(--gold-primary); text-decoration: none; font-size: 0.7rem; font-weight: 600; word-break: break-all;">mgntravels77@gmail.com</a>
+            </div>
+        </aside>
+
+        <div id="main">
+            <section id="home" class="hero">
+                <div data-aos="fade-up">
+                    <span style="color: var(--gold-primary); font-weight: 800; letter-spacing: 5px;">SAFE • COMFORTABLE • ON-TIME</span>
+                    <h2 style="font-size: clamp(2.5rem, 6vw, 4.8rem); font-family: 'Playfair Display'; margin: 20px 0; line-height: 1.1;">Premium Travel <br><span class="typed gold-text" data-typed-items="Solutions, Experiences, Journeys"></span></h2>
+                    <p style="max-width: 550px; color: #aaa; margin-bottom: 45px; font-size: 1.05rem;">Professional Chauffeur services with All India Permit. Your trusted travel partner for Chennai city and luxury outstation trips across India.</p>
+
+                    <!--  <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                      <a href="https://wa.me/919941142648" target="_blank" style="background: #25D366; color: #fff; padding: 18px 40px; border-radius: 5px; text-decwhatsapporation: none; font-weight: 800; text-transform: uppercase; font-size: 0.9rem; display: inline-block;"><i class="bi bi-"></i> WhatsApp</a>
+                    </div> -->
+                    
+                </div>
+            </section>
+
+            <section id="fleet">
+                <div class="section-title" data-aos="fade-right">
+                    <span>EXCLUSIVE SELECTION</span>
+                    <h3>Available Fleet</h3>
+                </div>
+                <div class="fleet-grid">
+                    <div class="car-card" data-aos="fade-up">
+                       <div class="car-img" style="background-image: url('ChatGPT Image May 15, 2026, 01_43_47 PM.png');"></div>
+                        <div class="car-info">
+                            <span class="car-tag">Executive Sedan</span>
+                            <h4>Swift Dzire / Toyota Etios</h4>
+                            <div style="display: flex; gap: 15px; margin-top: 15px; font-size: 0.8rem; color: #888;">
+                                <span><i class="bi bi-people gold-text"></i> 4+1 Seats</span>
+                                <span><i class="bi bi-snow gold-text"></i> Full AC</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="car-img" style="background-image: url('c6es93a_1572125-removebg-preview.png');"></div>
+                        <div class="car-info">
+                            <span class="car-tag">Premium MUV</span>
+                            <h4>Toyota Innova Crysta / SUV</h4>
+                            <div style="display: flex; gap: 15px; margin-top: 15px; font-size: 0.8rem; color: #888;">
+                                <span><i class="bi bi-people gold-text"></i> 7+1 Seats</span>
+                                <span><i class="bi bi-stars gold-text"></i> Luxury Interior</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="car-img" style="background-image: url('ChatGPT Image May 15, 2026, 01_50_04 PM.png');"></div>
+                        <div class="car-info">
+                            <span class="car-tag">Group Travel</span>
+                            <h4>Tempo Traveller / Mini Bus</h4>
+                            <div style="display: flex; gap: 15px; margin-top: 15px; font-size: 0.8rem; color: #888;">
+                                <span><i class="bi bi-people gold-text"></i> 12-25 Seats</span>
+                                <span><i class="bi bi-tv gold-text"></i> LED Entertainment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" style="background: #050505;">
+                <div class="section-title">
+                    <span>OUR EXPERTISE</span>
+                    <h3>Service Details</h3>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+                    <div style="padding: 40px; background: #111; border-radius: 15px; text-align: center; border: 1px solid #222;" data-aos="zoom-in">
+                        <i class="bi bi-airplane gold-text" style="font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+                        <h4>Airport Pickup & Drop </h4>
+                        <p style="font-size: 0.85rem; color: #777; margin-top: 10px;">Reliable 24/7 transfers to Chennai International & Domestic terminals.</p>
+                    </div>
+                    <div style="padding: 40px; background: #111; border-radius: 15px; text-align: center; border: 1px solid #222;" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="bi bi-geo-alt gold-text" style="font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+                        <h4>Outstation Trips</h4>
+                        <p style="font-size: 0.85rem; color: #777; margin-top: 10px;">Safe and professional chauffeurs for your spiritual or holiday tours.</p>
+                    </div>
+                    <div style="padding: 40px; background: #111; border-radius: 15px; text-align: center; border: 1px solid #222;" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="bi bi-heart gold-text" style="font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+                        <h4>Wedding Events</h4>
+                        <p style="font-size: 0.85rem; color: #777; margin-top: 10px;">Elegant vehicle arrangements for bridal parties and wedding guests.</p>
+                    </div>
+                    <div style="padding: 40px; background: #111; border-radius: 15px; text-align: center; border: 1px solid #222;" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="bi bi-buildings gold-text" style="font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+                        <h4>Corporate Travel</h4>
+                        <p style="font-size: 0.85rem; color: #777; margin-top: 10px;">Dedicated fleet services for business executives and team commutes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-to-book">
+                <div class="section-title" data-aos="fade-right">
+                    <span>EASY STEPS</span>
+                    <h3>How to Book</h3>
+                </div>
+                <div class="booking-grid">
+                    <div class="booking-step" data-aos="fade-up">
+                        <span class="step-num">1</span>
+                        <i class="bi bi-chat-left-text-fill gold-text"></i>
+                        <h4>Submit Inquiry</h4>
+                        <p style="font-size: 0.85rem; color: #888;">Share your travel details, pickup time, and destination via Call or WhatsApp.</p>
+                    </div>
+                    <div class="booking-step" data-aos="fade-up" data-aos-delay="100">
+                        <span class="step-num">2</span>
+                        <i class="bi bi-check2-square gold-text"></i>
+                        <h4>Get Quote</h4>
+                        <p style="font-size: 0.85rem; color: #888;">Our team provides a transparent, all-inclusive price quote with no hidden charges.</p>
+                    </div>
+                    <div class="booking-step" data-aos="fade-up" data-aos-delay="200">
+                        <span class="step-num">3</span>
+                        <i class="bi bi-shield-lock-fill gold-text"></i>
+                        <h4>Confirmation</h4>
+                        <p style="font-size: 0.85rem; color: #888;">Confirm your booking and receive driver contact and vehicle info instantly.</p>
+                    </div>
+                    <div class="booking-step" data-aos="fade-up" data-aos-delay="300">
+                        <span class="step-num">4</span>
+                        <i class="bi bi-car-front-fill gold-text"></i>
+                        <h4>Commence Journey</h4>
+                        <p style="font-size: 0.85rem; color: #888;">Relax as our professional chauffeur arrives on time for a premium travel experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+                    <div>
+                        <span style="color: var(--gold-primary);">CORE VALUES</span>
+                        <h3 style="font-family: 'Playfair Display'; font-size: 2.8rem; margin: 15px 0;">Why Choose MGN?</h3>
+                        <div style="margin-top: 30px;">
+                            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+                                <i class="bi bi-person-badge gold-text" style="font-size: 1.5rem;"></i>
+                                <div><h5>Expert Chauffeurs</h5><p style="font-size: 0.85rem; color: #888;">Verified, polite, and experienced drivers who prioritize your safety.</p></div>
+                            </div>
+                            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+                                <i class="bi bi-stars gold-text" style="font-size: 1.5rem;"></i>
+                                <div><h5>Pristine Vehicles</h5><p style="font-size: 0.85rem; color: #888;">Regularly serviced, cleaned, and sanitized fleet for a fresh journey.</p></div>
+                            </div>
+                            <div style="margin-bottom: 25px; display: flex; gap: 20px;">
+                                <i class="bi bi-clock-history gold-text" style="font-size: 1.5rem;"></i>
+                                <div><h5>24/7 Availability</h5><p style="font-size: 0.85rem; color: #888;">Day or night, our support team is ready to assist with your bookings.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 50px 30px; border-radius: 20px; border: 1px solid var(--gold-primary); text-align: center;" data-aos="flip-left">
+                         <h4 style="color: var(--gold-primary); margin-bottom: 20px; letter-spacing: 2px;">PROPRIETOR CONTACT</h4>
+                          <h2 style="font-size: clamp(1.3rem, 4vw, 1.7rem); white-space: nowrap; margin-bottom: 15px;">+91 99411 42648</h2>
+                        <a href="tel:+919941142648" class="gold-btn" style="width: 100%;">Call Now</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-box" data-aos="zoom-out">
+                    <h2 style="font-family: 'Playfair Display'; font-size: 2.8rem; margin-bottom: 10px;">Ready for Your Journey?</h2>
+                    <p style="font-weight: 600; margin-bottom: 40px; font-size: 1.1rem; opacity: 0.8;">Trusted Partner for Chennai & All India Travel Permits</p>
+                    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <a href=" mgnenquiry.html " style="background: #000; color: #fff; padding: 20px 55px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.1rem; letter-spacing: 1px;">BOOK NOW</a>
+                        <a href="mailto:mgntravels77@gmail.com" style="background: transparent; border: 2px solid #000; color: #000; padding: 20px 55px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 1.1rem;">EMAIL US</a>
+                    </div>
+                    <p style="margin-top: 40px; font-weight: 700; font-size: 1.2rem;">Address: Chennai, Tamil Nadu</p>
+                </div>
+            </section>
+
+            <footer style="padding: 60px 40px; text-align: center; border-top: 1px solid #111; color: #444; font-size: 0.85rem;">
+                <div style="margin-bottom: 20px; font-family: 'Playfair Display'; font-size: 1.5rem; color: var(--gold-primary);">MGN Travels</div>
+                <p>&copy; 2026 MGN TRAVELS CHENNAI. ALL RIGHTS RESERVED.</p>
+                <p style="margin-top: 10px; font-size: 0.7rem; letter-spacing: 2px;">DESIGNED BY VYNTRIX</p>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Initialize Animations
+                AOS.init({ duration: 1000, once: true });
+
+                // Functional Mobile Sidebar Toggle
+                $('#mobToggle').on('click', function(e) {
+                    e.stopPropagation();
+                    $('body').toggleClass('sidebar-open');
+                    $(this).find('i').toggleClass('bi-list bi-x');
+                });
+
+                // Auto-close Sidebar on Link Click
+                $('.nav-link').on('click', function() {
+                    $('body').removeClass('sidebar-open');
+                    $('#mobToggle').find('i').addClass('bi-list').removeClass('bi-x');
+                });
+
+                // Close Sidebar when clicking on the Main area
+                $('#main').on('click', function() {
+                    if($('body').hasClass('sidebar-open')) {
+                        $('body').removeClass('sidebar-open');
+                        $('#mobToggle').find('i').addClass('bi-list').removeClass('bi-x');
+                    }
+                });
+
+                // Dynamic Typed Text
+                new Typed('.typed', {
+                    strings: ['Solutions', 'Experiences', 'Journeys'],
+                    loop: true, typeSpeed: 60, backSpeed: 40, backDelay: 2000
+                });
+
+                // Scroll Progress & Spy Logic
+                $(window).on('scroll', function() {
+                    let scrollPos = $(window).scrollTop();
+                    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    $('#scroll-progress').css('width', (scrollPos / height * 100) + "%");
+
+                    // Highlight active link in sidebar
+                    $('section').each(function() {
+                        let top = $(this).offset().top - 200;
+                        let bottom = top + $(this).outerHeight();
+                        if (scrollPos >= top && scrollPos <= bottom) {
+                            $('.nav-link').removeClass('active');
+                            $('.nav-menu').find('[href="#' + $(this).attr('id') + '"]').addClass('active');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+    </html>
