@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="vignesh Tuition Center provides focused academic coaching, regular assessments, experienced teachers and personalized support for students."
+    >
+
+    <meta
+        name="keywords"
+        content="tuition centre, tuition classes, school tuition, academic coaching, student education, exam preparation"
+    >
+
+    <meta name="author" content="vignesh Tuition Center">
+
+    <meta
+        name="theme-color"
+        content="#0b1f3a"
+    >
+
+    <link rel="icon" type="image/x-icon" href="tuition logo.jpeg">
+
+    <title>
+        vignesh Tuition Center | Learn Better. Achieve More.
+    </title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header" id="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo" aria-label="BrightPath Academy home">
+
+                <div class="logo-mark">
+                    <img src="tuition logo.jpeg" alt="Vignesh Tuition Center Logo">
+                </div>
+
+                <div class="logo-text">
+                    <strong>vignesh Tuition Center</strong>
+                </div>
+
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+                <a href="#courses" class="nav-link">
+                    Courses
+                </a>
+
+                <a href="#teachers" class="nav-link">
+                    Teachers
+                </a>
+
+                <a href="#achievements" class="nav-link">
+                    Achievements
+                </a>
+
+                <a href="#reviews" class="nav-link">
+                    Reviews
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+            <a href="#enquiry" class="nav-button">
+                Enquire Now
+            </a>
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-nav" id="mobileNav">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#teachers">Teachers</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+            <a href="#enquiry" class="mobile-enquiry">
+                Enquire Now
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-bg-shape hero-shape-one"></div>
+            <div class="hero-bg-shape hero-shape-two"></div>
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Trusted Academic Guidance
+                    </div>
+
+                    <h1>
+                        Learn Better.
+                        <span>Achieve More.</span>
+                    </h1>
+
+                    <p>
+                        Building strong academic foundations through
+                        focused teaching, regular assessments and
+                        personalized guidance for every student.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#enquiry"
+                            class="btn btn-primary"
+                        >
+                            Join Our Classes
+                            <span>→</span>
+                        </a>
+
+                        <a
+                            href="#courses"
+                            class="btn btn-outline"
+                        >
+                            Explore Courses
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="trust-avatars">
+                            <div>N</div>
+                            <div>S</div>
+                            <div>K</div>
+                            <div>+</div>
+                        </div>
+
+                        <div>
+                            <strong>500+ Students Guided</strong>
+                            <span>Growing together every year</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual reveal">
+
+                    <div class="hero-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85"
+                            alt="Students learning in a classroom"
+                        >
+
+                        <div class="hero-floating-card achievement-card">
+
+                            <div class="floating-icon">
+                                🏆
+                            </div>
+
+                            <div>
+                                <strong>95%+</strong>
+                                <span>Top Results</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="hero-floating-card learning-card">
+
+                            <div class="learning-icon">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>Weekly Tests</strong>
+                                <span>Track student progress</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats-section">
+
+            <div class="container stats-grid">
+
+                <div class="stat-item reveal">
+                    <strong data-count="12">0</strong>
+                    <span>Years Experience</span>
+                </div>
+
+                <div class="stat-item reveal">
+                    <strong data-count="3607">0</strong>
+                    <span>Students Guided</span>
+                </div>
+
+                <div class="stat-item reveal">
+                    <strong data-count="25">0</strong>
+                    <span>Expert Teachers</span>
+                </div>
+
+                <div class="stat-item reveal">
+                    <strong data-count="95">0</strong>
+                    <span>% Success Rate</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="section about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <span class="section-label">
+                        About Our Academy
+                    </span>
+
+                    <h2>
+                        Education that focuses on
+                        <span>real progress.</span>
+                    </h2>
+
+                    <p>
+                        We believe every student has the potential to
+                        achieve more with the right guidance, consistent
+                        practice and individual attention.
+                    </p>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-visual reveal">
+
+                        <div class="about-image-main">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=85"
+                                alt="Teacher explaining lessons to students"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="about-experience">
+
+                            <strong>12+</strong>
+                            <span>Years of<br>Academic Excellence</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-content reveal">
+
+                        <h3>
+                            A learning environment designed
+                            for student success.
+                        </h3>
+
+                        <p>
+                           vignesh Tuition Center provides structured
+                            academic support for school students with
+                            a strong focus on understanding concepts,
+                            improving confidence and preparing for
+                            examinations.
+                        </p>
+
+                        <p>
+                            Our teaching approach combines classroom
+                            learning, regular assessments, doubt
+                            clarification and continuous performance
+                            tracking.
+                        </p>
+
+
+                        <div class="about-features">
+
+                            <div class="about-feature">
+
+                                <span class="check-icon">✓</span>
+
+                                <div>
+                                    <strong>Concept-Based Learning</strong>
+                                    <p>
+                                        Understand concepts instead of
+                                        simply memorizing answers.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-feature">
+
+                                <span class="check-icon">✓</span>
+
+                                <div>
+                                    <strong>Regular Assessments</strong>
+                                    <p>
+                                        Weekly tests help identify
+                                        strengths and improvement areas.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="about-feature">
+
+                                <span class="check-icon">✓</span>
+
+                                <div>
+                                    <strong>Personal Attention</strong>
+                                    <p>
+                                        Students receive focused
+                                        guidance based on their needs.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       <!-- =========================
+             COURSES
+========================== -->
+
+<section class="section courses-section" id="courses">
+
+    <div class="container">
+
+        <div class="section-header center reveal">
+
+            <span class="section-label">
+                Courses & Classes
+            </span>
+
+            <h2>
+                Focused guidance for
+                <span>Classes 10, 11 & 12.</span>
+            </h2>
+
+            <p>
+                Specialized academic coaching designed to strengthen
+                concepts, improve performance, and prepare students
+                for their examinations.
+            </p>
+
+        </div>
+
+
+        <div class="courses-grid">
+
+
+            <!-- CLASS 10 -->
+
+            <article class="course-card reveal">
+
+                <div class="course-number">
+                    01
+                </div>
+
+                <div class="course-icon">
+                    📘
+                </div>
+
+                <h3>
+                    Class 10
+                </h3>
+
+                <p>
+                    Strong academic foundation with focused preparation
+                    for school and board examinations.
+                </p>
+
+                <ul>
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Social Science</li>
+                    <li>English</li>
+                    <li>Tamil</li>
+                </ul>
+
+                <a href="#enquiry">
+                    Enquire about Class 10 →
+                </a>
+
+            </article>
+
+
+
+            <!-- CLASS 11 -->
+
+            <article class="course-card featured reveal">
+
+                <div class="popular-tag">
+                    Most Popular
+                </div>
+
+                <div class="course-number">
+                    02
+                </div>
+
+                <div class="course-icon">
+                    📚
+                </div>
+
+                <h3>
+                    Class 11
+                </h3>
+
+                <p>
+                    Concept-focused coaching to help students build
+                    a strong foundation for higher secondary education.
+                </p>
+
+                <ul>
+                    <li>Tamil</li> 
+                    <li>English</li>
+                    <li>Mathematics</li>
+                    <li>Computer Science</li>
+                    <li>Biology</li> 
+                    <li>Accountancy</li>
+                    <li>Commerce</li> 
+                    <li>Business Mathematics</li> 
+                    <li>Physics</li> 
+                    <li>Chemistry</li>
+                    <li>Computer Application</li>
+                </ul>
+
+                <a href="#enquiry">
+                    Enquire about Class 11 →
+                </a>
+
+            </article>
+
+
+
+            <!-- CLASS 12 -->
+
+            <article class="course-card reveal">
+
+                <div class="course-number">
+                    03
+                </div>
+
+                <div class="course-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Class 12
+                </h3>
+
+                <p>
+                    Exam-focused preparation with regular tests,
+                    revision, and personalized academic guidance.
+                </p>
+
+                <ul>
+                  <li>Tamil</li> 
+                  <li>English</li> 
+                  <li>Mathematics</li> 
+                  <li>Computer Science</li> 
+                  <li>Biology</li> 
+                  <li>Accountancy</li> 
+                  <li>Commerce</li> 
+                  <li>Business Mathematics</li> 
+                  <li>Physics</li> 
+                  <li>Chemistry</li>
+                  <li>Computer Application</li>
+                </ul>
+
+                <a href="#enquiry">
+                    Enquire about Class 12 →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- =========================
+             TEACHERS
+        ========================== -->
+
+        <section class="section teachers-section" id="teachers">
+
+            <div class="container">
+
+                <div class="section-header center reveal">
+
+                    <span class="section-label">
+                        Our Faculty
+                    </span>
+
+                    <h2>
+                        Learn from teachers who
+                        <span>care about results.</span>
+                    </h2>
+
+                    <p>
+                        Experienced educators committed to helping
+                        students understand, improve and succeed.
+                    </p>
+
+                </div>
+
+
+                <div class="teachers-grid">
+
+                    <article class="teacher-card reveal">
+
+                        <div class="teacher-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=85"
+                                alt="Priya Sharma, Mathematics teacher"
+                                loading="lazy"
+                            >
+
+                            <div class="teacher-subject">
+                                Mathematics
+                            </div>
+
+                        </div>
+
+                        <div class="teacher-info">
+
+                            <h3>
+                                Priya Sharma
+                            </h3>
+
+                            <span>
+                                Senior Mathematics Faculty
+                            </span>
+
+                            <p>
+                                10+ years of teaching experience
+                                focused on conceptual learning.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="teacher-card reveal">
+
+                        <div class="teacher-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=85"
+                                alt="Arun Kumar, Science teacher"
+                                loading="lazy"
+                            >
+
+                            <div class="teacher-subject">
+                                Science
+                            </div>
+
+                        </div>
+
+                        <div class="teacher-info">
+
+                            <h3>
+                                Arun Kumar
+                            </h3>
+
+                            <span>
+                                Senior Science Faculty
+                            </span>
+
+                            <p>
+                                Experienced in making complex topics
+                                easier to understand.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="teacher-card reveal">
+
+                        <div class="teacher-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=700&q=85"
+                                alt="Meena Raj, English teacher"
+                                loading="lazy"
+                            >
+
+                            <div class="teacher-subject">
+                                English
+                            </div>
+
+                        </div>
+
+                        <div class="teacher-info">
+
+                            <h3>
+                                Meena Raj
+                            </h3>
+
+                            <span>
+                                English Faculty
+                            </span>
+
+                            <p>
+                                Helping students improve communication,
+                                grammar and exam writing skills.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ACHIEVEMENTS
+        ========================== -->
+
+        <section class="section achievements-section" id="achievements">
+
+            <div class="container">
+
+                <div class="section-header center reveal">
+
+                    <span class="section-label">
+                        Student Achievements
+                    </span>
+
+                    <h2>
+                        Their success is our
+                        <span>proudest achievement.</span>
+                    </h2>
+
+                    <p>
+                        Celebrating the dedication, consistency and
+                        hard work of our students.
+                    </p>
+
+                </div>
+
+
+                <div class="toppers-grid">
+
+                    <article class="topper-card reveal">
+
+                        <div class="topper-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=700&q=85"
+                                alt="Student topper"
+                                loading="lazy"
+                            >
+
+                            <div class="rank-badge">
+                                #01
+                            </div>
+
+                        </div>
+
+                        <div class="topper-info">
+
+                            <span>
+                                Class 10 • 2025
+                            </span>
+
+                            <h3>
+                                Ananya R.
+                            </h3>
+
+                            <div class="score">
+                                <strong>96.8%</strong>
+                                <small>Overall Score</small>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="topper-card reveal">
+
+                        <div class="topper-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85"
+                                alt="Student topper"
+                                loading="lazy"
+                            >
+
+                            <div class="rank-badge">
+                                #02
+                            </div>
+
+                        </div>
+
+                        <div class="topper-info">
+
+                            <span>
+                                Class 12 • 2025
+                            </span>
+
+                            <h3>
+                                Rahul K.
+                            </h3>
+
+                            <div class="score">
+                                <strong>95.4%</strong>
+                                <small>Overall Score</small>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="topper-card reveal">
+
+                        <div class="topper-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=85"
+                                alt="Student topper"
+                                loading="lazy"
+                            >
+
+                            <div class="rank-badge">
+                                #03
+                            </div>
+
+                        </div>
+
+                        <div class="topper-info">
+
+                            <span>
+                                Class 10 • 2025
+                            </span>
+
+                            <h3>
+                                Vikram S.
+                            </h3>
+
+                            <div class="score">
+                                <strong>94.9%</strong>
+                                <small>Overall Score</small>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="achievement-banner reveal">
+
+                    <div>
+
+                        <span>
+                            More than marks
+                        </span>
+
+                        <h3>
+                            We celebrate every step forward.
+                        </h3>
+
+                    </div>
+
+                    <a href="#enquiry" class="btn btn-light">
+                        Start Your Journey →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             WHY CHOOSE US
+        ========================== -->
+
+        <section class="section why-section" id="why-us">
+
+            <div class="container">
+
+                <div class="why-grid">
+
+                    <div class="why-content reveal">
+
+                        <span class="section-label">
+                            Why Choose Us
+                        </span>
+
+                        <h2>
+                            More than tuition.
+                            <span>A complete learning experience.</span>
+                        </h2>
+
+                        <p>
+                            Our approach is designed around consistency,
+                            understanding and measurable progress.
+                        </p>
+
+                        <a
+                            href="#enquiry"
+                            class="btn btn-primary"
+                        >
+                            Talk to Us
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="why-cards">
+
+                        <div class="why-card reveal">
+
+                            <div class="why-icon">
+                                🎯
+                            </div>
+
+                            <h3>
+                                Focused Learning
+                            </h3>
+
+                            <p>
+                                Structured classes with clear academic
+                                goals for every student.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card reveal">
+
+                            <div class="why-icon">
+                                📊
+                            </div>
+
+                            <h3>
+                                Regular Tests
+                            </h3>
+
+                            <p>
+                                Frequent assessments to track progress
+                                and identify improvement areas.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card reveal">
+
+                            <div class="why-icon">
+                                👨‍👩‍👧
+                            </div>
+
+                            <h3>
+                                Parent Updates
+                            </h3>
+
+                            <p>
+                                Parents stay informed about their child's
+                                academic performance.
+                            </p>
+
+                        </div>
+
+
+                        <div class="why-card reveal">
+
+                            <div class="why-icon">
+                                💡
+                            </div>
+
+                            <h3>
+                                Doubt Support
+                            </h3>
+
+                            <p>
+                                Students get additional guidance when
+                                they need help understanding a topic.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section class="section gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-header center reveal">
+
+                    <span class="section-label">
+                        Our Gallery
+                    </span>
+
+                    <h2>
+                        Moments that make
+                        <span>learning memorable.</span>
+                    </h2>
+
+                    <p>
+                        A glimpse into our classrooms, activities,
+                        celebrations and student achievements.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item gallery-large reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85"
+                            alt="Students studying in classroom"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+                            <span>Classroom Learning</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85"
+                            alt="Students working together"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+                            <span>Group Activities</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=85"
+                            alt="Teacher helping students"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+                            <span>Personal Guidance</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85"
+                            alt="Students learning"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+                            <span>Learning Together</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85"
+                            alt="Student achievement celebration"
+                            loading="lazy"
+                        >
+
+                        <div class="gallery-overlay">
+                            <span>Achievements</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REVIEWS
+        ========================== -->
+
+        <section class="section reviews-section" id="reviews">
+
+            <div class="container">
+
+                <div class="section-header center reveal">
+
+                    <span class="section-label">
+                        Parent Reviews
+                    </span>
+
+                    <h2>
+                        What parents
+                        <span>say about us.</span>
+                    </h2>
+
+                    <p>
+                        Real experiences from parents who have trusted
+                        us with their child's learning journey.
+                    </p>
+
+                </div>
+
+
+                <div class="reviews-wrapper">
+
+                    <button
+                        class="review-arrow review-prev"
+                        id="reviewPrev"
+                        type="button"
+                        aria-label="Previous review"
+                    >
+                        ←
+                    </button>
+
+
+                    <div class="reviews-track" id="reviewsTrack">
+
+                        <article class="review-card">
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                “The teachers are very supportive and
+                                regularly update us about our child's
+                                performance. We have seen a clear
+                                improvement in confidence and marks.”
+                            </blockquote>
+
+                            <div class="review-author">
+
+                                <div class="review-avatar">
+                                    RS
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Rajesh S.
+                                    </strong>
+
+                                    <span>
+                                        Parent of Class 10 Student
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="review-card">
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                “The weekly tests and regular feedback
+                                help us understand exactly where our
+                                child needs more support.”
+                            </blockquote>
+
+                            <div class="review-author">
+
+                                <div class="review-avatar">
+                                    PM
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Priya M.
+                                    </strong>
+
+                                    <span>
+                                        Parent of Class 8 Student
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="review-card">
+
+                            <div class="review-stars">
+                                ★★★★★
+                            </div>
+
+                            <blockquote>
+                                “We are very happy with the teaching
+                                quality and individual attention given
+                                to students. Highly recommended.”
+                            </blockquote>
+
+                            <div class="review-author">
+
+                                <div class="review-avatar">
+                                    AK
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Arun K.
+                                    </strong>
+
+                                    <span>
+                                        Parent of Class 12 Student
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <button
+                        class="review-arrow review-next"
+                        id="reviewNext"
+                        type="button"
+                        aria-label="Next review"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+
+                <div class="review-action reveal">
+
+                    <p>
+                        Are you a parent of our student?
+                    </p>
+
+                    <button
+                        type="button"
+                        class="review-button"
+                        id="openReviewModal"
+                    >
+                        ⭐ Share Your Experience
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ENQUIRY
+        ========================== -->
+
+        <section class="section enquiry-section" id="enquiry">
+
+            <div class="container">
+
+                <div class="enquiry-box">
+
+                    <div class="enquiry-content reveal">
+
+                        <span class="section-label">
+                            Admission & Enquiry
+                        </span>
+
+                        <h2>
+                            Give your child the
+                            <span>right start.</span>
+                        </h2>
+
+                        <p>
+                            Have questions about classes, subjects,
+                            timings or admissions? Send us an enquiry
+                            and our team will get in touch with you.
+                        </p>
+
+
+                        <div class="enquiry-points">
+
+                            <div>
+                                <span>✓</span>
+                                Personal guidance
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Flexible class options
+                            </div>
+
+                            <div>
+                                <span>✓</span>
+                                Regular performance tracking
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        class="enquiry-form reveal"
+                        id="enquiryForm"
+                        novalidate
+                    >
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="parentName">
+                                    Parent Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="parentName"
+                                    name="parentName"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                                <small class="form-error"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter mobile number"
+                                    autocomplete="tel"
+                                    inputmode="numeric"
+                                    required
+                                >
+
+                                <small class="form-error"></small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="studentClass">
+                                    Student Class
+                                </label>
+
+                                <select
+                                    id="studentClass"
+                                    name="studentClass"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select class
+                                    </option>
+
+                                    <option value="10">
+                                        Class 10
+                                    </option>
+
+                                    <option value="11">
+                                        Class 11
+                                    </option>
+
+                                    <option value="12">
+                                        Class 12
+                                    </option>
+
+                                </select>
+
+                                <small class="form-error"></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Interested Subject
+                                </label>
+
+                                <select
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select subject
+                                    </option>
+
+                                    <option value="Mathematics">
+                                        Tamil
+                                    </option>
+
+                                    <option value="Science">
+                                        English
+                                    </option>
+
+                                    <option value="English">
+                                        Science
+                                    </option>
+
+                                    
+                                    <option value="English">
+                                        Social Science
+                                    </option>
+
+                                    <option value="Physics">
+                                        Mathematics(10th, 11th & 12th)
+                                    </option>
+
+                                    <option value="Chemistry">
+                                        Physics
+                                    </option>
+
+                                    <option value="English">
+                                        Chemistry
+                                    </option>
+
+                                    <option value="English">
+                                        Biology
+                                    </option>
+
+                                    <option value="English">
+                                        Computer Science
+                                    </option>
+                                    
+                                    <option value="English">
+                                        Accountancy
+                                    </option>
+                                    
+                                    <option value="English">
+                                        Commerce
+                                    </option>
+                                    
+                                    <option value="English">
+                                        Business Mathematics
+                                    </option>
+                                    
+                                    <option value="English">
+                                        Computer Application
+                                    </option>
+
+                                    <option value="Multiple">
+                                        Multiple Subjects
+                                    </option>
+
+                                </select>
+
+                                <small class="form-error"></small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Tell us how we can help..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary form-submit"
+                        >
+                            Send Enquiry
+                            <span>→</span>
+                        </button>
+
+
+                        <p class="form-note">
+                            Your information will only be used to
+                            respond to your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="section-header center reveal">
+
+                    <span class="section-label">
+                        Contact Us
+                    </span>
+
+                    <h2>
+                        Let's start your child's
+                        <span>learning journey.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-card reveal">
+
+                        <div class="contact-icon">
+                            📍
+                        </div>
+
+                        <h3>
+                            Visit Us
+                        </h3>
+
+                        <p>
+                            123, Main Road,<br>
+                            Chennai, Tamil Nadu 600001
+                        </p>
+
+                        <a
+                            href="https://maps.google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open Google Maps →
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <div class="contact-icon">
+                            📞
+                        </div>
+
+                        <h3>
+                            Call Us
+                        </h3>
+
+                        <p>
+                            +91 87784 64779
+                        </p>
+
+                        <a href="tel:+919876543210">
+                            Call Now →
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <div class="contact-icon">
+                            💬
+                        </div>
+
+                        <h3>
+                            WhatsApp
+                        </h3>
+
+                        <p>
+                            Chat with our admissions team.
+                        </p>
+
+                        <a
+                            href="https://wa.me/919876543210"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Chat on WhatsApp →
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-card reveal">
+
+                        <div class="contact-icon">
+                            ✉️
+                        </div>
+
+                        <h3>
+                            Email Us
+                        </h3>
+
+                        <p>
+                            admissions@brightpathacademy.in
+                        </p>
+
+                        <a href="mailto:admissions@brightpathacademy.in">
+                            Send Email →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo footer-logo">
+
+                    <div class="logo-mark">
+                        BP
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>vignesh Tuition Center</strong>
+                    </div>
+
+                </a>
+
+                <p>
+                    Helping students learn with confidence,
+                    consistency and purpose.
+                </p>
+
+                <div class="social-links">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                    >
+                        IG
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                    >
+                        FB
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+                        YT
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#about">About Us</a>
+                <a href="#courses">Courses</a>
+                <a href="#teachers">Teachers</a>
+                <a href="#achievements">Achievements</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Student Support
+                </h3>
+
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#reviews">Parent Reviews</a>
+                <a href="#enquiry">Admission</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <span>
+                    +91 98765 43210
+                </span>
+
+                <span>
+                    admissions@brightpathacademy.in
+                </span>
+
+                <span>
+                    Chennai, Tamil Nadu
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container footer-bottom-inner">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    BrightPath Academy. All rights reserved.
+                </p>
+
+                <p>
+                    Designed & Developed professionally
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         REVIEW MODAL
+    ========================== -->
+
+    <div
+        class="modal"
+        id="reviewModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="reviewModalTitle"
+        >
+
+            <button
+                type="button"
+                class="modal-close"
+                id="closeReviewModal"
+                aria-label="Close review form"
+            >
+                ×
+            </button>
+
+            <span class="section-label">
+                Parent Feedback
+            </span>
+
+            <h2 id="reviewModalTitle">
+                Share Your Experience
+            </h2>
+
+            <p>
+                Your feedback helps other parents understand
+                the learning experience at our academy.
+            </p>
+
+
+            <form id="reviewForm" class="review-form">
+
+                <div class="form-group">
+
+                    <label for="reviewName">
+                        Parent Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="reviewName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reviewClass">
+                        Student Class
+                    </label>
+
+                    <select id="reviewClass" required>
+
+                        <option value="">
+                            Select class
+                        </option>
+
+                        <option>Class 6</option>
+                        <option>Class 7</option>
+                        <option>Class 8</option>
+                        <option>Class 9</option>
+                        <option>Class 10</option>
+                        <option>Class 11</option>
+                        <option>Class 12</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Rating
+                    </label>
+
+                    <div class="rating-input" id="ratingInput">
+
+                        <button type="button" data-rating="1">★</button>
+                        <button type="button" data-rating="2">★</button>
+                        <button type="button" data-rating="3">★</button>
+                        <button type="button" data-rating="4">★</button>
+                        <button type="button" data-rating="5">★</button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reviewMessage">
+                        Your Review
+                    </label>
+
+                    <textarea
+                        id="reviewMessage"
+                        rows="5"
+                        placeholder="Write your experience..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Submit Review
+                    <span>→</span>
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    >
+        <span class="toast-icon">✓</span>
+        <span id="toastMessage">
+            Successfully submitted.
+        </span>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

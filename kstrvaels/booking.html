@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Ride | KS Travels</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="booking-page-hero">
+
+        <div class="container">
+
+            <div class="booking-hero-content">
+
+
+                <h1>Book Your Ride</h1>
+
+                <p>
+                    Fill in your travel details and book your journey
+                    quickly through WhatsApp.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="booking-section">
+
+        <div class="container booking-container">
+
+            <div class="booking-info">
+
+                <p class="section-tag">TRAVEL WITH CONFIDENCE</p>
+
+                <h2>
+                    Plan Your Journey<br>
+                    with KS Travels
+                </h2>
+
+                <p class="booking-info-text">
+                    Tell us your travel details and our team will
+                    contact you shortly to confirm your ride.
+                </p>
+
+                <div class="booking-benefits">
+
+                    <div class="booking-benefit">
+
+                        <div class="booking-benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <h3>Safe & Reliable</h3>
+                            <p>Travel with experienced drivers.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-benefit">
+
+                        <div class="booking-benefit-icon">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+
+                        <div>
+                            <h3>Comfortable Vehicles</h3>
+                            <p>Choose the vehicle that suits your trip.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-benefit">
+
+                        <div class="booking-benefit-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+
+                        <div>
+                            <h3>Quick Confirmation</h3>
+                            <p>We will confirm your booking through WhatsApp.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="booking-contact-box">
+
+                    <div class="booking-contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <span>Need help?</span>
+                        <strong>+91 63808 19466</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-form-card">
+
+                <div class="booking-form-header">
+
+                    <p class="section-tag">QUICK BOOKING</p>
+
+                    <h2>Ride Details</h2>
+
+                    <p>Enter your details below</p>
+
+                </div>
+
+
+                <form id="bookingForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="customerName">
+                                Full Name <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="customerName"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="customerPhone">
+                                Mobile Number <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="customerPhone"
+                                    placeholder="Enter mobile number"
+                                    maxlength="10"
+                                    inputmode="numeric"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="pickupLocation">
+                                Pickup Location <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <input
+                                    type="text"
+                                    id="pickupLocation"
+                                    placeholder="Enter pickup location"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dropLocation">
+                                Drop Location <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <input
+                                    type="text"
+                                    id="dropLocation"
+                                    placeholder="Enter destination"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="travelDate">
+                                Travel Date <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-calendar-days"></i>
+
+                                <input
+                                    type="date"
+                                    id="travelDate"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="travelTime">
+                                Travel Time <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                                <input
+                                    type="time"
+                                    id="travelTime"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="vehicleType">
+                                Select Vehicle <span>*</span>
+                            </label>
+
+                            <div class="input-box select-box">
+
+                                <i class="fa-solid fa-car"></i>
+
+                                <select id="vehicleType" required>
+
+                                    <option value="">
+                                        Select vehicle
+                                    </option>
+
+                                    <option value="Sedan - 4 Seater">
+                                        Sedan - 4 Seater
+                                    </option>
+
+                                    <option value="SUV - 6 Seater">
+                                        SUV - 6 Seater
+                                    </option>
+
+                                    <option value="Innova / Crysta - 6 Seater">
+                                        Innova / Crysta - 7+ Seater
+                                    </option>
+
+                                    <option value="Tempo Traveller - 15+ Seater">
+                                        Tempo Traveller - 15+ Seater
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="passengers">
+                                Passengers <span>*</span>
+                            </label>
+
+                            <div class="input-box">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <input
+                                    type="number"
+                                    id="passengers"
+                                    min="1"
+                                    max="50"
+                                    placeholder="Number of passengers"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="additionalMessage">
+                            Additional Message
+                        </label>
+
+                        <div class="textarea-box">
+
+                            <i class="fa-solid fa-message"></i>
+
+                            <textarea
+                                id="additionalMessage"
+                                rows="4"
+                                placeholder="Any special requirements? (Optional)"
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="booking-submit-btn">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Book Ride
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <p class="booking-note">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        Your booking details will be sent through WhatsApp.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  
+<script src="script.js"></script>
+
+
+</body>
+</html>
